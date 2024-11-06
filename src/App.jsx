@@ -3,7 +3,7 @@ import { selectContacts } from './redux/contactsSlice';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import ContactsForm from './components/ContactsForm/ContactsForm';
+import ContactForm from './components/ContactForm/ContactForm';
 import ContactList from './components/ContactList/ContactList';
 import SearchBox from './components/SearchBox/SearchBox';
 
@@ -16,7 +16,7 @@ const App = () => {
     <>
       <div>
         <h1>Phonebook</h1>
-        <ContactsForm />
+        <ContactForm />
         {contacts.length === 0 ? (
           <p>You don&apos;t have any contacts yet.</p>
         ) : (

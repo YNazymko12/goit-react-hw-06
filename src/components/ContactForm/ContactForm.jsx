@@ -5,7 +5,7 @@ import { nanoid } from '@reduxjs/toolkit';
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';
 
-import css from './ContactsForm.module.css';
+import css from './ContactForm.module.css';
 
 const formSchema = Yup.object().shape({
   username: Yup.string()
